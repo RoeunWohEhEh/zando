@@ -1,64 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zando</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zando</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<style>
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #444; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+</style>
+
 <body>
     <nav class="navbar">
         <div class="shadow">
             <div class="container-width nav">
+                <div class="menu-left">
+                    <ul>
+                        <li>Women</li>
+                        <li>Men</li>
+                        <li>Boys</li>
+                        <li>Girls</li>
+                    </ul>
+                </div>
 
-            <div class="menu-left">
-                <ul>
-                    <li>WOMEN</li>
-                    <li>MEN</li>
-                    <li>BOYS</li>
-                    <li>GIRLS</li>
-                </ul>
-            </div>
+                <div class="menu-center">
+                    <img src="https://zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="" />
+                </div>
 
-            <div class="menu-center">
-                <img src="https://www.zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="">
-            </div>
-
-            <div class="menu-right">
-                <ul>
-                    <li>
-                        <div class="search">
-                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" placeholder="Search">
-                        </div>
-                    </li>
-                    <li><i class="fa-solid fa-bell"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li>
-                    <li><i class="fa-solid fa-cart-arrow-down"></i></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">REGISTER</a></li>
-                </ul>
+                <div class="menu-right">
+                    <ul>
+                        <li>
+                            <div class="search">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" />
+                            </div>
+                        </li>
+                        <li><i class="fa-regular fa-bell"></i></li>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        <li>Login</li>
+                        <li>register</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="promo-bar">
-        Enjoy free delivery on orders $40 or more.
-    </div>
+
+        <div class="container-width" style="background-color: red;height: 30px;">
+            <p style="text-align: center; color: white; font-weight: bold;">
+                Enjoy free delivery on orders $40 or more.
+            </p>
+        </div>
+    </nav>
+
+    <!-- hero section -->
 
     <section class="container-width hero">
         <swiper-container class="mySwiper">
             <swiper-slide>
-                <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Jan/start%20from%2050/35-OFF_Main_ZANDO%20(2160x1066).jpg?fbclid=IwY2xjawPdRqBleHRuA2FlbQIxMABicmlkETFxTzhVc204Y1h0ZzJUZk4xc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkMUonKyOl-ozqIsiog0pXD_ymgfl18h5pCn9Yqlgm8QYS0eRaE8S1H4-TfZ_aem_7t9mKTa5fP1uDszijb_4iA" alt="">
-                
+                <img src="https://www.thebridgelifestylemall.com/wp-content/uploads/2020/01/83281389_470379650318871_1774614614793781248_o-1.png"
+                    alt="" />
                 <div class="hero-btn">
                     <button>Shop Men</button>
                     <button>Shop Women</button>
                 </div>
             </swiper-slide>
-
+            <swiper-slide>
+                <img src="https://zoo.sandiegozoo.org/sites/default/files/styles/hero_with_nav_gradient/public/hero/SDZ25_AT7037_lunar-new-year-zoo_web-landing-hero_1920x1067.jpg?itok=nFUV-vpe"
+                    alt="" />
+                <div class="hero-btn">
+                    <button>Shop Men</button>
+                    <button>Shop Women</button>
+                </div>
+            </swiper-slide>
         </swiper-container>
     </section>
-    </nav>
-    
+
+    <!-- brand -->
+
+    <div class="container-width brand">
+        <swiper-container class="mySwiper" slides-per-view="6" centered-slides="false" navigation="true">
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Zando_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Ten11_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Routine_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Gatoni_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/361_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Sisburma_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div>
+                    <img src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand%20Icon/Pomelo_Web%20(2).png"
+                        alt="" />
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
+    <!-- slides -->
+    <div class="container-width slide">
+        <swiper-container class="mySwiper" space-between="5" centered-slides="true" autoplay-delay="1500"
+            autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <img src="https://outfitters.com.pk/cdn/shop/files/DV_1920x900_W-min_b054e43c-6095-4b84-82f1-67ec796f68e4_1660x.jpg?v=1750401574"
+                    alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Mar/Summer-Season/Main-Banner.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Mar/KNY/Hero%20Banner%20ZANDO.png" alt="">
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
+    <!-- main cards -->
+    <main class="container-width main-card">
+        <div class="header-main-card">
+            <h1>❤️Customer Favorite</h1>
+            <a href="">Shop more</a>
+        </div>
+
+        <div class="body-main-card">
+            <div class="cards">
+                <div class="img-card">
+                    <img src="https://zandokh.com/image/cache/catalog/products/2026-01/11225101558/STU_2676-cr-450x672.jpg"
+                        alt="" />
+                </div>
+
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="price-heart">
+                            <div class="price">
+                                <span>US $12.00</span>
+                                <span>US $14.00</span>
+                            </div>
+
+                            <span class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+
+                        <p class="product-name">Dyed Boxy Shirt</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img-card">
+                    <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102339/STU_0413-cr-450x672.jpg"
+                        alt="" />
+                </div>
+
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="price-heart">
+                            <div class="price">
+                                <span>US $12.00</span>
+                                <span>US $14.00</span>
+                            </div>
+
+                            <span class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+
+                        <p class="product-name">Floral Mini Dress</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="img-card">
+                    <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102355/STU_1096-cr-450x672.jpg"
+                        alt="" />
+                </div>
+
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="price-heart">
+                            <div class="price">
+                                <span>US $12.00</span>
+                                <span>US $14.00</span>
+                            </div>
+
+                            <span class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+
+                        <p class="product-name">Graphic T-Shirt</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="img-card">
+                    <!-- <span class="discount">-25%</span>
+                    <span class="brand-tag">ZANDO / New in</span> -->
+                    
+                    <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                        alt="" />
+                </div>
+
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="price-heart">
+                            <div class="price">
+                                <span>US $12.00</span>
+                                <span>US $14.00</span>
+                            </div>
+
+                            <span class="heart-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+
+                        <p class="product-name">Trendy Cropped Shirt</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
