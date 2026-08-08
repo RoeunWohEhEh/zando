@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zando</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -36,12 +35,20 @@
 </style>
 
 <body>
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement-bar">
+        <div class="container-width announcement-content">
+            <span><i class="fa-solid fa-bolt"></i> FREE EXPRESS SHIPPING ON ORDERS OVER $40 | EASY 30-DAY RETURNS</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
     <nav class="navbar">
         <div class="shadow">
             <div class="container-width nav">
                 <div class="menu-left">
                     <ul>
-                        <li>Women</li>
+                        <li class="active">Women</li>
                         <li>Men</li>
                         <li>Boys</li>
                         <li>Girls</li>
@@ -49,7 +56,7 @@
                 </div>
 
                 <div class="menu-center">
-                    <img src="https://zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="" />
+                    <a href="#"><img src="https://zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="Zando Logo" /></a>
                 </div>
 
                 <div class="menu-right">
@@ -57,23 +64,25 @@
                         <li>
                             <div class="search">
                                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                                <input type="text" />
+                                <input type="text" placeholder="Search clothes, shoes, brands..." />
                             </div>
                         </li>
-                        <li><i class="fa-regular fa-bell"></i></li>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><i class="fa-solid fa-bag-shopping"></i></li>
-                        <li>Login</li>
-                        <li>register</li>
+                        <li title="Notifications" class="icon-nav-item">
+                            <i class="fa-regular fa-bell"></i>
+                        </li>
+                        <li title="Wishlist" class="icon-nav-item">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="icon-badge">2</span>
+                        </li>
+                        <li title="Shopping Bag" class="icon-nav-item">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="icon-badge">3</span>
+                        </li>
+                        <li class="auth-btn"><a href="#">Login</a></li>
+                        <li class="auth-btn register-btn"><a href="#">Register</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="container-width" style="background-color: red;height: 30px;">
-            <p style="text-align: center; color: white; font-weight: bold;">
-                Enjoy free delivery on orders $40 or more.
-            </p>
         </div>
     </nav>
 
@@ -169,11 +178,14 @@
     <!-- main cards -->
     <main class="container-width main-card">
         <div class="header-main-card">
-            <h1>❤️Customer Favorite</h1>
-            <a href="">Shop more</a>
+            <div class="section-title-wrap">
+                <h2>Customer Favorites</h2>
+                <p class="section-subtitle">Most loved styles trending this week</p>
+            </div>
+            <a href="#" class="shop-more-link">Shop More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <div class="body-main-card">
+        <!-- <div class="body-main-card">
             <div class="cards">
                 <div class="img-card">
                     <span class="dis">-10%</span>
@@ -280,6 +292,273 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="body-main-card">
+            <swiper-container 
+            class="mySwiper" 
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true">
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/11225101558/STU_2676-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Dyed Boxy Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102339/STU_0413-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Floral Mini Dress</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102355/STU_1096-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Graphic T-Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>        
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/22225091861/t-cr-450x672.png"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Trendy Cropped Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
         </div>
 
         <div class="body-main-box">
@@ -321,124 +600,172 @@
         </div>
         
         <div class="header-main-card">
-            <h1>🎊 CNY 2026 Sale – Selected Styles</h1>
-            <a href="">Shop more</a>
+            <div class="section-title-wrap">
+                <h2>CNY 2026 Sale – Selected Styles</h2>
+                <p class="section-subtitle">Exclusive Lunar New Year deals up to 50% OFF</p>
+            </div>
+            <a href="#" class="shop-more-link">Shop More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="body-main-card">
-            <div class="cards">
-                <div class="img-card">
-                    <span class="dis">-10%</span>
-                    <img src="https://zandokh.com/image/cache/catalog/products/2024-12/22224111057/New/Ten112542-cr-450x672.jpg"
-                        alt="" />
-                    <div class="brand-img">ZANDO / New in</div>
-                </div>
-
-                <div class="card-body">
-                    <div class="card-text">
-                        <div class="price-heart">
-                            <div class="price">
-                                <span>US $12.00</span>
-                                <span>US $14.00</span>
-                            </div>
-
-                            <span class="heart-icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
+            <swiper-container
+            class="mySwiper" 
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true">
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-08/22225031287/ZANDO020820251661-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
                         </div>
 
-                        <p class="product-name">Mini Skort Dresses</p>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
 
-                    </div>
-                </div>
-            </div>
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
 
-            <div class="cards">
-                <div class="img-card">
-                    <span class="dis">-10%</span>
-                    <img src="https://zandokh.com/image/cache/catalog/products/2025-08/22225031287/ZANDO020820251661-cr-450x672.jpg"
-                        alt="" />
-                    <div class="brand-img">ZANDO / New in</div>
-                </div>
+                                <p class="product-name">Cropped Tops</p>
 
-                <div class="card-body">
-                    <div class="card-text">
-                        <div class="price-heart">
-                            <div class="price">
-                                <span>US $12.00</span>
-                                <span>US $14.00</span>
                             </div>
-
-                            <span class="heart-icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2024-12/22224111057/New/Ten112542-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
                         </div>
 
-                        <p class="product-name">Cropped Tops</p>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="img-card">
-                    <span class="dis">-10%</span>
-                    <img src="https://zandokh.com/image/cache/catalog/products/2025-01/22224111145/IMG_0108-cr-450x672.jpg"
-                        alt="" />
-                    <div class="brand-img">ZANDO / New in</div>
-                </div>
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
 
-                <div class="card-body">
-                    <div class="card-text">
-                        <div class="price-heart">
-                            <div class="price">
-                                <span>US $12.00</span>
-                                <span>US $14.00</span>
+                                <p class="product-name">Mini Skort Dresses</p>
+
                             </div>
-
-                            <span class="heart-icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-01/22224111145/IMG_0108-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
                         </div>
 
-                        <p class="product-name">Mini Dresses</p>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="img-card">
-                    <span class="dis">-10%</span>
-                    <img src="https://zandokh.com/image/cache/catalog/products/2025-12/5142512004/STU_8668-cr-450x672.jpg"
-                        alt="" />
-                    <div class="brand-img">ZANDO / New in</div>
-                </div>
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
 
-                <div class="card-body">
-                    <div class="card-text">
-                        <div class="price-heart">
-                            <div class="price">
-                                <span>US $12.00</span>
-                                <span>US $14.00</span>
+                                <p class="product-name">Mini Dresses</p>
+
                             </div>
-
-                            <span class="heart-icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-12/5142512004/STU_8668-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
                         </div>
 
-                        <p class="product-name">Sport Life Tank Top</p>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
 
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Sport Life Tank Top</p>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-12/5142512004/STU_8668-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Sport Life Tank Top</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
         </div>
 
         <div class="header-main-card">
-            <h1>Dominion Hoofbeat 🐎✨</h1>
-            <a href="">Shop more</a>
+            <div class="section-title-wrap">
+                <h2>Dominion Hoofbeat Collection</h2>
+                <p class="section-subtitle">Premium equestrian-inspired luxury wear</p>
+            </div>
+            <a href="#" class="shop-more-link">Shop More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <div class="body-main-card">
+        <!-- <div class="body-main-card">
             <div class="cards">
                 <div class="img-card">
                     <span class="dis">-10%</span>
@@ -545,14 +872,166 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="body-main-card">
+            <swiper-container
+            class="mySwiper" 
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="10"
+            navigation="true">
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-12/11225101520/ZD__5869-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Relaxed Fitted Shirt</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-12/11225101549/ZD__4429-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Regular T-Shirt With Printed</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102333/STU_0227-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Elegant Mini Dress</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225102334/STU_0656-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Cropped Top</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/12225101860/STU_0551-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Satin Halter Top</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
         </div>
 
         <div class="header-main-card">
-            <h1>👞 Footwear Must-Haves</h1>
-            <a href="">Shop more</a>
+            <div class="section-title-wrap">
+                <h2>Footwear Must-Haves</h2>
+                <p class="section-subtitle">Step out in confidence with our top shoe picks</p>
+            </div>
+            <a href="#" class="shop-more-link">Shop More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <div class="body-main-card">
+        <!-- <div class="body-main-card">
             <div class="cards">
                 <div class="img-card">
                     <span class="dis">-10%</span>
@@ -663,9 +1142,355 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="body-main-card">
+            <swiper-container
+            class="mySwiper"
+            slides-per-view="4"
+            centered-slides="false"
+            space-between="5"
+            navigation="true">
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/5252512156/8J6A9097-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Retro Culture Sneakers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/5252512154/8J6A8756-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Retro Culture Sneakers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/5162512160/8J6A8833-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Perform Running Sneakers</p>
+
+                                <ul class="color">
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2026-01/5262512105/8J6A8887-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Running Sneakers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="cards">
+                        <div class="img-card">
+                            <span class="dis">-10%</span>
+                            <img src="https://zandokh.com/image/cache/catalog/products/2025-12/5152512190/8J6A9047-cr-450x672.jpg"
+                                alt="" />
+                            <div class="brand-img">ZANDO / New in</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="price-heart">
+                                    <div class="price">
+                                        <span>US $12.00</span>
+                                        <span>US $14.00</span>
+                                    </div>
+
+                                    <span class="heart-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+
+                                <p class="product-name">Skateboarding Sneakers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
         </div>
 
     </main>
+
+    <footer class="footer">
+        <div class="container-width footer-container">
+            <div class="footer-columns">
+                <!-- Zando App Column -->
+                <div class="footer-col">
+                    <h4 class="footer-title">ZANDO APP</h4>
+                    <div class="img-qr">
+                        <img src="https://zandokh.com/image/catalog/logo/qr_code_app.png" alt="Zando App QR">
+                    </div>
+                </div>
+
+                <!-- Loyalty Column -->
+                <div class="footer-col">
+                    <h4 class="footer-title">LOYALTY</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-shield-halved"></i> Membership & Benefits</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us Column -->
+                <div class="footer-col">
+                    <h4 class="footer-title">FOLLOW US</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Customer Services Column -->
+                <div class="footer-col">
+                    <h4 class="footer-title">CUSTOMER SERVICES</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#"><i class="fa-regular fa-circle-question"></i> Online exchange policy</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-shield"></i> Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-comments"></i> FAQs & guides</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i> Find a store</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us Column -->
+                <div class="footer-col">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="mailto:customer.care@zandokh.com"><i class="fa-regular fa-envelope"></i> customer.care@zandokh.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+855085330330"><i class="fa-solid fa-phone"></i> (+855) 085 330 330</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- We Accept Section -->
+            <div class="we-accept-section">
+                <h4 class="footer-title">WE ACCEPT</h4>
+                <div class="payment-methods">
+                    <!-- Row 1: Major Card & E-Wallet Badges -->
+                    <div class="payment-row">
+                        <!-- ABA PAY -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="ABA PAY">
+                            <rect width="76" height="40" rx="8" fill="#005B66"/>
+                            <text x="10" y="18" fill="white" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" letter-spacing="0.5">ABA</text>
+                            <path d="M31 9L33 9L32 11Z" fill="#E21B23"/>
+                            <text x="10" y="32" fill="#00C2CB" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" letter-spacing="1.5">PAY</text>
+                        </svg>
+
+                        <!-- VISA -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="VISA">
+                            <rect width="76" height="40" rx="8" fill="#1A56AD"/>
+                            <text x="38" y="27" fill="white" font-family="sans-serif" font-weight="900" font-style="italic" font-size="20" text-anchor="middle" letter-spacing="1">VISA</text>
+                        </svg>
+
+                        <!-- Mastercard -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Mastercard">
+                            <rect width="76" height="40" rx="8" fill="#000000"/>
+                            <circle cx="31" cy="20" r="13" fill="#EB001B"/>
+                            <circle cx="45" cy="20" r="13" fill="#F79E1B" fill-opacity="0.9"/>
+                        </svg>
+
+                        <!-- UnionPay -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="UnionPay">
+                            <rect width="76" height="40" rx="8" fill="#007B89"/>
+                            <path d="M0 0H30L20 40H0V0Z" fill="#E21B23"/>
+                            <path d="M24 0H50L40 40H14L24 0Z" fill="#003478"/>
+                            <text x="38" y="19" fill="white" font-family="sans-serif" font-weight="800" font-size="10" text-anchor="middle" font-style="italic">UnionPay</text>
+                            <text x="38" y="31" fill="white" font-family="sans-serif" font-weight="700" font-size="9" text-anchor="middle">银联</text>
+                        </svg>
+
+                        <!-- JCB -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="JCB">
+                            <rect width="76" height="40" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+                            <rect x="18" y="8" width="12" height="24" rx="3" fill="#004289"/>
+                            <rect x="32" y="8" width="12" height="24" rx="3" fill="#E30613"/>
+                            <rect x="46" y="8" width="12" height="24" rx="3" fill="#009640"/>
+                            <text x="24" y="24" fill="white" font-family="sans-serif" font-weight="900" font-size="11" text-anchor="middle">J</text>
+                            <text x="38" y="24" fill="white" font-family="sans-serif" font-weight="900" font-size="11" text-anchor="middle">C</text>
+                            <text x="52" y="24" fill="white" font-family="sans-serif" font-weight="900" font-size="11" text-anchor="middle">B</text>
+                        </svg>
+
+                        <!-- ACLEDA Bank -->
+                        <svg class="pay-svg" width="76" height="40" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="ACLEDA Bank">
+                            <rect width="76" height="40" rx="8" fill="#17345C"/>
+                            <text x="10" y="21" fill="white" font-family="sans-serif" font-weight="700" font-size="9">អេស៊ីលីដា</text>
+                            <text x="10" y="29" fill="#CCCCCC" font-family="sans-serif" font-weight="600" font-size="5.5">ACLEDA BANK</text>
+                            <path d="M56 12L62 16L57 26L51 22Z" fill="#F59E0B"/>
+                            <path d="M62 16L68 14L63 22L57 26Z" fill="#FBBF24"/>
+                        </svg>
+                    </div>
+
+                    <!-- Row 2: Wing, Chip Mong, Bank Transfer, Cash on Delivery -->
+                    <div class="payment-row">
+                        <!-- Wing Bank -->
+                        <svg class="pay-svg" width="84" height="40" viewBox="0 0 84 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Wing Bank">
+                            <rect width="84" height="40" rx="8" fill="#99CC33"/>
+                            <text x="42" y="24" fill="white" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" text-anchor="middle" font-style="italic">Wing<tspan fill="#0055A5">Bank</tspan></text>
+                        </svg>
+
+                        <!-- Chip Mong Bank -->
+                        <div class="chip-mong-wrapper" title="Chip Mong Bank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#008744"/>
+                                <path d="M20 9C13.9249 9 9 13.9249 9 20C9 26.0751 13.9249 31 20 31C23.9 31 27.2 28.8 28.9 25.5L24.5 23.2C23.6 25.2 21.9 26.3 20 26.3C16.5212 26.3 13.7 23.4788 13.7 20C13.7 16.5212 16.5212 13.7 20 13.7C21.9 13.7 23.6 14.8 24.5 16.8L28.9 14.5C27.2 11.2 23.9 9 20 9Z" fill="white"/>
+                            </svg>
+                        </div>
+
+                        <!-- Bank Transfer -->
+                        <div class="text-pay-card" title="Bank Transfer">
+                            <div class="icon-box">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="#444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 7L12 2L22 7H2Z"/>
+                                    <path d="M4 7V15M9 7V15M15 7V15M20 7V15"/>
+                                    <path d="M2 15H22V18H2V15Z"/>
+                                </svg>
+                            </div>
+                            <span class="pay-card-text">Bank Transfer</span>
+                        </div>
+
+                        <!-- Cash on Delivery -->
+                        <div class="text-pay-card" title="Cash on Delivery">
+                            <div class="icon-box">
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" stroke="#444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="4" y="3" width="18" height="12" rx="2"/>
+                                    <circle cx="13" cy="9" r="3"/>
+                                    <path d="M1 6H4M1 12H4"/>
+                                </svg>
+                            </div>
+                            <span class="pay-card-text">Cash on Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Divider and Copyright -->
+            <div class="footer-bottom">
+                <hr class="footer-divider">
+                <div class="footer-copyright-wrap">
+                    <span class="copyright-text">&copy; 2015 - 2026 Zando. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Scroll to Top button -->
+        <button class="scroll-to-top" id="scrollTopBtn" title="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="fa-solid fa-chevron-up"></i>
+            <i class="fa-solid fa-computer-mouse"></i>
+        </button>
+    </footer>
 </body>
 
 </html>
